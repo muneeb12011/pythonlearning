@@ -1,0 +1,8 @@
+a = [1, 2, 3]
+b = a
+b.append(4)
+print(a)             # ?
+print(a is b)        # ?
+c = a.copy()
+c.append(99)
+print(a)             # ?
