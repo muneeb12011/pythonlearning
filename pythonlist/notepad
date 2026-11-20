@@ -1,0 +1,31 @@
+1. Concept + use
+What problem does a Python list solve? Give 2 situations where a list is a good choice and 1 where it isn't.
+
+python solve 
+
+6. Choosing the structure
+Choose the most appropriate structure and explain why:
+
+ordered student registrations
+fast username membership checking
+employee_id → employee
+immutable (x, y) coordinates
+frequent insertion/removal from both ends
+Choose from:
+
+list / tuple / set / dict / deque
+Need	Structure	Why
+ordered student registrations	list	keeps insertion order, can keep growing
+fast username membership checking	set	O(1) lookup via hashing, instead of scanning
+employee_id → employee	dict	direct key → value lookup, not position-based
+immutable (x, y) coordinates	tuple	locked, can't be accidentally changed
+frequent insertion/removal from both ends	deque	O(1) at both front and back, list is only cheap at the back
+One-line rule for each:
+
+Need order, might grow → list
+Need fast "does it exist" → set
+Need label → value → dict
+Need "never change" → tuple
+Need fast work at both ends → deque
+
+what why use complexity references tradeoffs internalss 
